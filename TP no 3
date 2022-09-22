@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] argh) {
+        Scanner mainScanner = new Scanner(System.in);
+
+        // Input personal data
+        System.out.print("Masukan Nama Anda: ");
+        String nama = mainScanner.next();
+        System.out.println("Stock Gudang Input Barang");
+        System.out.println("#########################");
+        System.out.println("Selamat Datang " + nama);
+
+        //input data by user
+        System.out.print("Masukan nama barang: ");
+        String namaBarang = mainScanner.next();
+        System.out.print("Masukan jumlah barang yang mau ditambahkan: ");
+        int jumlahBarang = mainScanner.nextInt();
+        System.out.print("Masukan harga beli untuk barang tersebut: ");
+        Float hargaBeli = mainScanner.nextFloat();
+        System.out.print("Masukan harga jual untuk barang tersebut: ");
+        Float hargaJual = mainScanner.nextFloat();
+
+        //output data by system
+        System.out.println("Stock Gudang Rincian Barang");
+        System.out.println("###########################");
+        System.out.println("Nama Barang: " + namaBarang);
+        System.out.println("Jumlah Barng: " + jumlahBarang);
+        System.out.print("Harga Beli: ");
+        System.out.printf("%.2f\n", hargaBeli);
+        System.out.print("Harga jual: ");
+        System.out.printf("%.2f\n", hargaJual);
+
+    }
+}
