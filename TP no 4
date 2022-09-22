@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class main {
+    public static void main(String[] argh) {
+        Scanner mainScanner = new Scanner(System.in);
+
+        //header
+        System.out.println("Selamat Datang Di Program Ramalan Cupu");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++");
+        System.out.println();
+
+        // Input personal data
+        System.out.println("Data Anda: ");
+        System.out.println("❤❤❤❤❤❤❤❤❤");
+        System.out.print("Masukan Nama Anda: ");
+        String nama = mainScanner.nextLine();
+        System.out.print("Masukan Umur Anda: ");
+        String umur = mainScanner.nextLine();
+        System.out.println();
+
+
+        // Input partner data
+        System.out.println("Data Pasangan Anda");
+        System.out.println("❤❤❤❤❤❤❤❤❤");
+        System.out.print("Masukan Nama Pasangan Anda: ");
+        String namapasangan = mainScanner.nextLine();
+        System.out.print("Masukan Umur Pasangan Anda: ");
+        String umurpasangan = mainScanner.nextLine();
+        System.out.println();
+
+        //output data by system
+        System.out.println(nama + " [" + umur + "] tahun");
+        System.out.println();
+        System.out.println("   ❤❤❤   ❤❤❤ ");
+        System.out.println(" ❤❤❤❤  ❤❤❤❤");
+        System.out.println("❤❤❤❤❤❤❤❤❤❤");
+        System.out.println("  ❤❤❤❤❤❤❤❤");
+        System.out.println("    ❤❤❤❤❤❤");
+        System.out.println("       ❤❤❤");
+        System.out.println("        ❤❤");
+        System.out.println();
+        System.out.println(namapasangan + " [" + umurpasangan + "] tahun");
+        System.out.println();
+
+        //result
+        System.out.print("Tekan ENTER untuk melihat hasil ramalan...  ");
+        Random rdm = new Random();
+        double nilai = 50 + (100-50) * rdm.nextDouble();
+        System.out.print(String.format("%.2f" , nilai) + "%");
+    }
+}
